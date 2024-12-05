@@ -1,9 +1,6 @@
 body{
     background: hsl(47, 88%, 63%);
     font-family: 'Figtree', sans-serif;
-}
-.blog-card{
-    min-height: 100vh;
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -12,12 +9,11 @@ body{
 .blog-card-content{
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     background: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 7%);
-    padding: 24px;
+    padding: 1.2rem;
     border-radius: 20px;
-    width: 365px;
+    max-width: 365px;
     box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
 }
 
@@ -30,24 +26,23 @@ body{
 .blog-card-label{
     font-weight: 500;
     border-radius: 5px;
-    width: 90px;
+    max-width: 90px;
     background-color: hsl(47, 88%, 63%);
-    padding: 4px 4px 4px 8px;
-    box-sizing: border-box;
+    padding: 5px 10px;
 }
 
 .blog-card-date{
-    font-size: 16px;
     color: hsl(0, 0%, 42%);
-    
+    font-weight: 500;
 }
 
 .blog-card-link{
     color: #000;
     text-decoration: none;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 22px;
 }
+
 .blog-card-link:hover{
     color: hsl(47, 88%, 63%);
 }
@@ -55,8 +50,9 @@ body{
 .blog-card-text{
     color: hsl(0, 0%, 42%);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
+    margin-top: 10px;
 
 }
 
@@ -64,6 +60,7 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .blog-card-author img{
@@ -74,4 +71,12 @@ body{
 
 .blog-card-author span{
     font-weight: 500;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
 }
